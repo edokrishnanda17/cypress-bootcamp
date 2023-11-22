@@ -15,7 +15,7 @@ async function setupNodeEvents(on, config) {
 
 module.exports = defineConfig({
   e2e: {
-    specPattern: "**/*.feature",
+    specPattern: ["**/*.feature", "**/*.cy.{js,jsx,ts,tsx}"],
     setupNodeEvents,
   },
 });
