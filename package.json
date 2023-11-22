@@ -26,5 +26,8 @@
   },
   "cypress-cucumber-preprocessor": {
     "stepDefitintions": "cypress/e2e/**.js"
+  },
+  "devDependencies": {
+    "cypress-xpath": "^2.0.1"
   }
 }
