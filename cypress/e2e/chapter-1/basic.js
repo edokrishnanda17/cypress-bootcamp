@@ -1,18 +1,17 @@
+/* eslint-disable no-use-before-define */
 //cara bukat terminal control+`
 
-var tester = 'air'; //siapin tempat dan mengisi 
+var tester = 'air'; //siapin tempat dan mengisi
 
 let nama = 'axel'; //string
 let angka = 4; //angka/integer
 let isLogin = true; //boolean
-let manusia= {
-    nama : 'David',
-    umur : 18
+let manusia = {
+  nama: 'David',
+  umur: 18
 }; //objek
 
-
 const bulan = 'mei';
-
 
 // console.log(tester); // output ke console
 // console.log(angka);
@@ -33,8 +32,6 @@ let angka2 = 5;
 // let mobilSaya = mobil[2];
 
 // console.log(mobilSaya);
-
-
 
 //if else
 let umur = 17;
@@ -57,7 +54,7 @@ let tinggi = 170;
 
 //looping for
 // for (let i = 0; i < 5; i++) {
-//     console.log(i);  
+//     console.log(i);
 // }
 
 //looping while
@@ -69,7 +66,7 @@ let tinggi = 170;
 
 // function foo(namaPanjang){
 //     // for (let i = 0; i < 5; i++) {
-//     //     console.log(i);  
+//     //     console.log(i);
 //     // }
 //     console.log(namaPanjang);
 // }
@@ -84,15 +81,16 @@ let tinggi = 170;
 
 // console.log(bar(10,15));
 
+/* eslint-disable */
+class Mobil {
+  roda; //attribute
 
-class Mobil{
-    roda; //attribute
-
-    jalanMobil(){ //method
-        console.log('Mobil Berjalan');
-    }
-
+  jalanMobil() {
+    //method
+    console.log('Mobil Berjalan');
+  }
 }
+/* eslint-enable */
 
 let bmw = new Mobil();
 let bajaj = new Mobil();
@@ -104,16 +102,14 @@ console.log(bmw.roda);
 console.log(bajaj.roda);
 bmw.jalanMobil();
 
-function doError(){
-    throw new Error(
-        'Kamu kena error'
-    );
+function doError() {
+  throw new Error('Kamu kena error');
 }
 
 try {
-    doError();
+  doError();
 } catch (e) {
-    console.log(e);
+  console.log(e);
 }
 
 console.log('codingan berikutnya');
